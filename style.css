@@ -1,0 +1,305 @@
+/* Simple styles for my Portfolio + Blog site */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f5f7;
+  color: #2b2d33;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1f2937;
+  color: #fff;
+  padding: 18px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  font-size: 24px;
+}
+
+header h1 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+nav a, nav span {
+  color: #e5e7eb;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 15px;
+}
+
+nav a:hover {
+  color: #6366f1;
+}
+
+#nav-auth {
+  margin-left: 18px;
+  font-size: 15px;
+}
+
+#nav-auth a {
+  margin-left: 8px;
+}
+
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #888;
+  font-size: 14px;
+}
+
+/* ---- Hero / Home page ---- */
+.hero {
+  background: #fff;
+  border: 1px solid #e3e5ea;
+  border-radius: 8px;
+  padding: 30px;
+  margin-bottom: 25px;
+}
+
+.hero h2 {
+  font-size: 28px;
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.hero .role {
+  color: #6366f1;
+  font-weight: bold;
+  margin-bottom: 14px;
+}
+
+.hero p {
+  margin-bottom: 16px;
+}
+
+section.section-block {
+  margin-bottom: 30px;
+}
+
+section.section-block h3 {
+  color: #1f2937;
+  margin-bottom: 14px;
+  border-left: 4px solid #6366f1;
+  padding-left: 10px;
+}
+
+/* skills list */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skill-tag {
+  background: #eef0ff;
+  color: #4338ca;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+}
+
+/* project cards */
+.project-card {
+  background: #fff;
+  border: 1px solid #e3e5ea;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 15px;
+}
+
+.project-card h4 {
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.project-card .tech {
+  font-size: 13px;
+  color: #6366f1;
+  margin-bottom: 8px;
+}
+
+/* ---- Blog post cards ---- */
+.post-card {
+  background: #fff;
+  border: 1px solid #e3e5ea;
+  border-radius: 8px;
+  padding: 18px 20px;
+  margin-bottom: 18px;
+}
+
+.post-card h2 {
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.post-card .meta {
+  font-size: 13px;
+  color: #888;
+  margin-bottom: 10px;
+}
+
+.post-card p {
+  margin-bottom: 12px;
+}
+
+.post-card a.read-more {
+  color: #6366f1;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.post-card a.read-more:hover {
+  text-decoration: underline;
+}
+
+.empty-msg {
+  text-align: center;
+  color: #888;
+  margin-top: 40px;
+}
+
+.notice-box {
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  color: #9a3412;
+  padding: 14px 18px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+/* ---- Forms (write, register, login) ---- */
+.form-box {
+  background: #fff;
+  border: 1px solid #e3e5ea;
+  border-radius: 8px;
+  padding: 25px;
+  max-width: 450px;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 15px;
+}
+
+textarea {
+  min-height: 200px;
+  resize: vertical;
+}
+
+button, .btn {
+  background-color: #6366f1;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+button:hover, .btn:hover {
+  background-color: #4f46e5;
+}
+
+.btn-secondary {
+  background-color: #888;
+}
+
+.btn-secondary:hover {
+  background-color: #666;
+}
+
+.btn-danger {
+  background-color: #b33;
+}
+
+.btn-danger:hover {
+  background-color: #922;
+}
+
+.form-footer-text {
+  margin-top: 14px;
+  font-size: 14px;
+}
+
+/* ---- Single post page ---- */
+.post-full h2 {
+  color: #1f2937;
+  margin-bottom: 6px;
+}
+
+.post-full .meta {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.post-full .content {
+  white-space: pre-wrap;
+  margin-bottom: 20px;
+}
+
+.actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+/* ---- About page ---- */
+.about-box {
+  background: #fff;
+  border: 1px solid #e3e5ea;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.contact-list {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.contact-list li {
+  margin-bottom: 6px;
+}
